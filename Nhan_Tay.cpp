@@ -9,7 +9,8 @@ int main()
 {
 	cout << "Nhap 2 so ";
 	unsigned int a, b, hangTram, hangChuc, hangDV, kqDV, kqChuc, kqTram, kq;
-	cin >> a >> b;
+	cin >> a; //nhap vao so nguyen thu nhat
+	cin >> b; //nhap vao so nguyen thu 2
 	hangTram = b / 100;
 	hangChuc = (b - hangTram * 100) / 10;
 	hangDV = b - hangTram * 100 - hangChuc * 10;
@@ -18,5 +19,6 @@ int main()
 	kqTram = a * hangTram;
 	kq = kqTram * 100 + kqChuc * 10 + kqDV;
 	cout << kq;
+	return 0;
 }
 
